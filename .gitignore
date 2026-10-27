@@ -1,0 +1,9 @@
+# Downloaded by fetch_media.py (Steam's trailers and art; not ours to redistribute)
+media/
+# Local game recordings/screenshots (show friends' faces)
+local-media/
+# Runtime state
+state/
+launch.log
+steam_api_key.txt
+__pycache__/

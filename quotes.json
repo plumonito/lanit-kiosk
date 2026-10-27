@@ -1,0 +1,164 @@
+{
+  "_note": "Fake review quotes shown in idle mode, keyed by game id. All of them are made up; edit freely.",
+
+  "boomerang-fu": [
+    { "q": "I was sliced in half by an avocado. With a boomerang. On the rebound. Ten out of ten.", "by": "Kev, LANIT 2025, beer #4" },
+    { "q": "One hit and you're sushi. Literally, I was playing the sushi.", "by": "The Quarterly Review of Snacks" },
+    { "q": "Someone picked up the teleport power-up and I haven't trusted anyone since.", "by": "A Very Paranoid Cucumber" }
+  ],
+  "towerfall": [
+    { "q": "Ran out of arrows, stomped on his head instead. Archery has never been this personal.", "by": "Robin Hoodie" },
+    { "q": "Caught an arrow mid-air with a perfectly timed dodge and the whole room stood up.", "by": "Couch Sports Weekly" },
+    { "q": "Bomb arrows from the treasure chest. That's all you need to know.", "by": "Anonymous Pyromaniac" }
+  ],
+  "tricky-towers": [
+    { "q": "My tower was perfect until a wizard turned my brick into a giant one. Friendships were tested.", "by": "Former Architect" },
+    { "q": "It's falling-block puzzle stuff, but the blocks have PHYSICS. The wobble haunts my dreams.", "by": "Structural Engineering Monthly" },
+    { "q": "Spent my light magic gluing the tower together like it was IKEA furniture.", "by": "Someone who should have read the manual" }
+  ],
+  "cake-bash": [
+    { "q": "I fought three other cakes to be the most delicious. I lost. I was eaten anyway.", "by": "A Disappointed Éclair" },
+    { "q": "Collect toppings, punch dessert, get chosen by the customer. Truly the circle of life.", "by": "The Bakery Philosopher" },
+    { "q": "Never seen grown adults this angry about sprinkles.", "by": "Someone's patient flatmate" }
+  ],
+  "speedrunners": [
+    { "q": "Hooked the ceiling, overtook everyone, fell off the screen. Classic me.", "by": "Grapple Gary" },
+    { "q": "The screen shrinks and whoever drops off the edge is out. It's musical chairs at 200 km/h.", "by": "Velocity Today" },
+    { "q": "Dropped a crate behind me and took out two friends at once. Best moment of the year.", "by": "Sir Boxalot" }
+  ],
+  "speedrunners-2": [
+    { "q": "Same grappling-hook chaos, now with more ways to ruin your friends' day.", "by": "Grapple Gary, older and no wiser" },
+    { "q": "It's a demo and we still argued about it for an hour.", "by": "The LANIT Council of Elders" },
+    { "q": "I came for the speed. I stayed for the betrayal.", "by": "A Former Speedrunner" }
+  ],
+  "uch": [
+    { "q": "I placed a crossbow to stop you and it shot ME. That's the game. That's the whole review.", "by": "The Chicken" },
+    { "q": "First everyone builds the level, then everyone races it. Nobody builds a fair level. Ever.", "by": "Level Design Daily" },
+    { "q": "If everyone finishes, nobody scores. So we put a black hole next to the flag.", "by": "Evil Horse" }
+  ],
+  "ultimate-sheep": [
+    { "q": "Sheep. Raccoons. Absolute nonsense. I can't stop laughing.", "by": "A Farmer, Probably" },
+    { "q": "From the people who taught us to hate our friends in Ultimate Chicken Horse.", "by": "Barnyard Gaming Review" },
+    { "q": "I don't fully understand what happened but the raccoon won and I respect it.", "by": "Confused but Happy" }
+  ],
+  "nplusplus": [
+    { "q": "Grab gold for more time, hit the switch, reach the door, die to a homing rocket. Repeat 400 times.", "by": "Ninja Pete" },
+    { "q": "Co-op levels where one ninja is a stepping stone for the other. Trust exercises with mines.", "by": "Team Building Quarterly" },
+    { "q": "The physics are so clean it feels like flying. Right up until the drone gets you.", "by": "Minimalism Weekly" }
+  ],
+  "super-meat-boy": [
+    { "q": "At the end of the level it replays ALL your deaths at once. Forty meat boys hitting one saw blade.", "by": "The Butcher's Gazette" },
+    { "q": "Pass the pad. Die. Pass the pad. Somebody gets it on try 73 and is a hero for the rest of the night.", "by": "LANIT Hall of Fame" },
+    { "q": "I wall-jumped through a saw blade corridor to save Bandage Girl and I'd do it again.", "by": "Meat Enthusiast" }
+  ],
+  "super-hexagon": [
+    { "q": "Rotate a tiny triangle, dodge walls, survive sixty seconds. I lasted four.", "by": "Dizzy Dave" },
+    { "q": "The announcer said 'Begin!' and then said 'Game over' about two seconds later.", "by": "Literally everyone" },
+    { "q": "The best game for passing the controller. Nobody holds it for long.", "by": "Spectator Sports Monthly" }
+  ],
+  "overcooked-2": [
+    { "q": "Now you can THROW the onions. Our kitchen became a war zone.", "by": "Head Chef (Fired)" },
+    { "q": "The kitchen split in half on a moving platform while the stove was on fire. Three stars.", "by": "Health Inspector" },
+    { "q": "We have stopped speaking to each other. The soup was perfect.", "by": "A Former Couple" }
+  ],
+  "moving-out": [
+    { "q": "Why carry the couch through the door when you can throw it through the window?", "by": "Smooth Moves Employee of the Month" },
+    { "q": "Two people on the fridge, one on the TV, everyone screaming 'PIVOT'.", "by": "Furniture Removal Journal" },
+    { "q": "Packed the whole house in under three minutes. The house did not survive.", "by": "A Concerned Homeowner" }
+  ],
+  "lovers": [
+    { "q": "One on the turrets, one on the shield, one on the engine and NOBODY on the laser. Space is hard.", "by": "Captain Panic" },
+    { "q": "Running around a neon pink spaceship rescuing space bunnies is my love language.", "by": "Bunny Rescue Society" },
+    { "q": "I yelled 'SHIELD LEFT!' so loudly the neighbours called.", "by": "Neighbour, Apartment 4B" }
+  ],
+  "ship-of-fools": [
+    { "q": "Reload the cannon, patch the hole in the hull, fire at the sea monster. Simultaneously. Badly.", "by": "First Mate, Second Thoughts" },
+    { "q": "Two fools, one boat, a whole ocean of tentacles. Perfect co-op.", "by": "Nautical Nonsense Weekly" },
+    { "q": "I fished during the calm part and then forgot to load the cannons. We sank.", "by": "Honest Fisherman" }
+  ],
+  "heave-ho": [
+    { "q": "Each trigger is one hand. Hold your friend's hand, swing, let go at the wrong time. Pure friendship.", "by": "The Hand Model" },
+    { "q": "We made a human chain across a pit and then someone sneezed.", "by": "Gravity Fan Club" },
+    { "q": "Four dangling little guys, one goal, zero coordination. Best party game ever.", "by": "Kev, again" }
+  ],
+  "mount-your-friends": [
+    { "q": "Each limb has its own button. You climb on top of your friends. That's it. Nobody can breathe from laughing.", "by": "Mountain Man Magazine" },
+    { "q": "I grabbed his knee, then his face, then the summit. Nobody will ever look at me the same way.", "by": "The Summit King" },
+    { "q": "Tallest pile of muscular men wins. Do not explain this game to your parents.", "by": "Family Values Weekly" }
+  ],
+  "myf-3d": [
+    { "q": "Mount Your Friends but now it's 3D, so you can fall off in a whole new dimension.", "by": "Physics Professor (on leave)" },
+    { "q": "Climbing a tower of friends in full 3D. Your neck will hurt from laughing.", "by": "Chiropractor's Choice" },
+    { "q": "Limbs everywhere. I won by grabbing what I think was an ear.", "by": "Anonymous Climber" }
+  ],
+  "phogs": [
+    { "q": "Two players, one stretchy dog with a head at each end. Who's walking who?", "by": "Dog Walkers Digest" },
+    { "q": "Stretch across a gap, bite the ledge, pull the other head over. Teamwork, but doggy.", "by": "Good Boy Gazette" },
+    { "q": "Wholesome game. We still fought over which end goes first.", "by": "The Back Half" }
+  ],
+  "bread-and-fred": [
+    { "q": "Two penguins tied together climbing a mountain. If one falls, you both fall. Trust issues: unlocked.", "by": "Penguin Relationship Counsellor" },
+    { "q": "One anchors, one swings. We swapped roles a lot. Mostly while falling.", "by": "Mountain Rescue Service" },
+    { "q": "We lost twenty minutes of progress in four seconds and laughed about it. Eventually.", "by": "Bread, probably" }
+  ],
+  "pico-park": [
+    { "q": "Eight cats, one key, one door. Seven people solved it. One person jumped on the key and fell into the void.", "by": "The Group Chat" },
+    { "q": "You need everyone to push the block. Everyone. Including Dave, who went the wrong way.", "by": "Dave's Former Friends" },
+    { "q": "Stacking cats on each other's heads to reach the exit. Diplomacy at its finest.", "by": "Feline Architecture Review" }
+  ],
+  "pico-park-2": [
+    { "q": "More levels, more cats, more ways for one person to ruin everything.", "by": "The Group Chat, Volume 2" },
+    { "q": "Eight players on one screen and every single one has a different plan.", "by": "Chaos Theory Journal" },
+    { "q": "The minute everyone finally cooperates, it feels like winning the World Cup.", "by": "Emotional Cat Owner" }
+  ],
+  "escape-academy": [
+    { "q": "Escape rooms with a timer and one partner yelling numbers at you. Surprisingly perfect.", "by": "Locksmith Weekly" },
+    { "q": "We solved the puzzle with three seconds left by guessing. Academic excellence.", "by": "Dean of Escapes" },
+    { "q": "Split screen means you can't see what your partner sees. So you shout. A lot.", "by": "Room Acoustics Monthly" }
+  ],
+  "split-fiction": [
+    { "q": "Every chapter is a different game. Sci-fi chase one minute, riding a dragon the next.", "by": "Genre Hopper Gazette" },
+    { "q": "Two writers stuck in their own stories, so you swap between laser bikes and magic every level.", "by": "The Co-op Critic" },
+    { "q": "We put down our drinks for this one. That's the highest praise LANIT gives.", "by": "LANIT Award Committee" }
+  ],
+  "circuit-superstars": [
+    { "q": "Top-down racing, but with pit stops and tyre wear. I pitted for fresh tyres and still came last.", "by": "Tyre Strategist (Retired)" },
+    { "q": "Overtook on the last corner and my friend said things I can't repeat.", "by": "Motorsport Monthly" },
+    { "q": "Easy to pick up, and the drifting feels great even when you're on drink four.", "by": "Designated Driver (Virtual)" }
+  ],
+  "make-way": [
+    { "q": "Everyone places track pieces before the race. Someone always puts a loop right after a jump.", "by": "Road Planning Authority" },
+    { "q": "I built the shortcut. I died on the shortcut. Poetry.", "by": "Civil Engineer, Disgraced" },
+    { "q": "Little cars, giant loops, pure sabotage. Mario Kart wishes.", "by": "Tiny Car Enthusiast" }
+  ],
+  "fling": [
+    { "q": "You're tied to your teammate with a giant elastic band. Slingshot them across the finish line!", "by": "Bungee Weekly" },
+    { "q": "Two teams of two, each pair on a rope, everyone flinging everyone into the void.", "by": "Elastic Sports Network" },
+    { "q": "Perfect fling, perfect landing, perfect high five. Then we fell off the map.", "by": "Rope Buddies" }
+  ],
+  "tmnt": [
+    { "q": "Threw a Foot Soldier straight at the screen just like in the arcade. I cried a little.", "by": "A Grown Man Born in 1988" },
+    { "q": "Four turtles, April, Splinter and pizza boxes healing you. Cowabunga, honestly.", "by": "Pizza Review Board" },
+    { "q": "Pixel art so good it hurts, and a beat 'em up anyone can play drunk.", "by": "Sewer Living Magazine" }
+  ],
+  "shootas": [
+    { "q": "Orks, big guns, more dakka. You collect teef as money. Teef!", "by": "Waaagh Weekly" },
+    { "q": "Run, shoot, explode, find a fancier hat. Excellent Ork life choices.", "by": "Warboss Fashion Blog" },
+    { "q": "Co-op run and gun where friendly yelling is part of the strategy.", "by": "Da Big Mek" }
+  ],
+  "gungeon": [
+    { "q": "A bullet hell where you dodge roll through bullets with tiny legs. Also there's a gun that shoots bees.", "by": "Beekeeper Quarterly" },
+    { "q": "Player two is the Cultist, which means player two is always the one who dies first.", "by": "The Cultist" },
+    { "q": "I've put 545 hours into this and I still panic at the first boss.", "by": "The guy who set up this kiosk" }
+  ],
+  "necrodancer": [
+    { "q": "Every move has to land on the beat. The skeletons dance too. The shopkeeper sings along.", "by": "Rhythm Dungeon Review" },
+    { "q": "It's a dungeon crawler but you have to bop your head to survive. Banger soundtrack.", "by": "DJ Dungeon" },
+    { "q": "Drunk rhythm games: nobody is on beat, everyone is having fun.", "by": "The Bar Band" }
+  ],
+  "blobby-knockout": [
+    { "q": "Everyone shares two blobs. Touch the ball, it crosses the net, you're out and the next person takes over. Genius.", "by": "Beach Volleyball Federation (Unofficial)" },
+    { "q": "Our friends' FACES are on the blobs. I spiked myself in the face. Twice.", "by": "Person 7" },
+    { "q": "Drunk mode runs the whole game at 60% speed. Made by LANIT, for LANIT.", "by": "LANIT Ministry of Sport" }
+  ]
+}

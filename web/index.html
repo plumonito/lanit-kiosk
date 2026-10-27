@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LANIT Coop Corner</title>
+  <link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="title">LANIT COOP CORNER</h1>
+    <ul id="legend" class="legend"></ul>
+    <div id="clock" class="clock"></div>
+  </header>
+
+  <main id="grid" class="sections"></main>
+
+  <footer class="hints">
+    <span><b class="btn a">A</b> Select</span>
+    <span><b class="btn b">B</b> Back</span>
+    <span><b class="btn sh">LB</b><b class="btn sh">RB</b> Jump player group</span>
+    <span id="play-source" class="play-source"></span>
+    <span id="pad-status" class="pad-status">No controller yet: press any button</span>
+  </footer>
+
+  <aside id="quote" class="quote" hidden>
+    <div class="quote-head"><span id="quote-game" class="quote-game"></span><span id="quote-meta" class="quote-meta"></span></div>
+    <blockquote id="quote-text"></blockquote>
+    <div class="quote-foot"><span id="quote-by" class="quote-by"></span><span class="quote-cta">Press any button to play</span></div>
+  </aside>
+
+  <div id="detail" class="overlay" hidden>
+    <div class="detail-card">
+      <div class="detail-media"><video id="detail-video" muted loop playsinline></video><img id="detail-cover" alt=""></div>
+      <div class="detail-info">
+        <div class="detail-tags"><span id="detail-type" class="chip"></span><span id="detail-players" class="chip players"></span><span id="detail-time" class="chip time"></span></div>
+        <h2 id="detail-title"></h2>
+        <p id="detail-blurb"></p>
+        <div class="detail-actions">
+          <span id="detail-play" class="action primary"><b class="btn a">A</b> <span id="detail-play-label">Play</span></span>
+          <span class="action"><b class="btn b">B</b> Back</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="launching" class="overlay launching" hidden>
+    <div class="spinner"></div>
+    <h2 id="launching-title"></h2>
+    <p id="launching-sub">Starting through Steam…</p>
+  </div>
+
+  <script src="/web/app.js"></script>
+</body>
+</html>

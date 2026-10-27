@@ -1,0 +1,63 @@
+{
+  "title": "LANIT COOP CORNER",
+  "types": {
+    "versus":   { "label": "Versus",          "color": "#e5484d" },
+    "platform": { "label": "Platform race",   "color": "#f5a524" },
+    "chaos":    { "label": "Co-op chaos",     "color": "#30a46c" },
+    "physics":  { "label": "Physics mayhem",  "color": "#8e4ec6" },
+    "puzzle":   { "label": "Co-op puzzle",    "color": "#0091ff" },
+    "racing":   { "label": "Racing",          "color": "#12a594" },
+    "action":   { "label": "Action co-op",    "color": "#d6409f" },
+    "local":    { "label": "Made at LANIT",   "color": "#ffd60a" }
+  },
+  "games": [
+    { "id": "boomerang-fu",      "title": "Boomerang Fu",                      "steam": 965680,  "players": 6, "type": "versus" },
+    { "id": "towerfall",         "title": "TowerFall Ascension",               "steam": 251470,  "players": 4, "type": "versus" },
+    { "id": "tricky-towers",     "title": "Tricky Towers",                     "steam": 437920,  "players": 4, "type": "versus" },
+    { "id": "cake-bash",         "title": "Cake Bash",                         "steam": 971690,  "players": 4, "type": "versus" },
+
+    { "id": "speedrunners",      "title": "SpeedRunners",                      "steam": 207140,  "players": 4, "type": "platform" },
+    { "id": "speedrunners-2",    "title": "SpeedRunners 2 (Demo)",             "steam": 3730740, "store_page": 3183760, "players": 4, "type": "platform" },
+    { "id": "uch",               "title": "Ultimate Chicken Horse",            "steam": 386940,  "players": 4, "type": "platform" },
+    { "id": "ultimate-sheep",    "title": "Ultimate Sheep Raccoon",            "steam": 2923350, "players": 4, "type": "platform" },
+    { "id": "nplusplus",         "title": "N++",                               "steam": 230270,  "players": 4, "type": "platform" },
+    { "id": "super-meat-boy",    "title": "Super Meat Boy",                    "steam": 40800,   "players": 1, "type": "platform" },
+    { "id": "super-hexagon",     "title": "Super Hexagon",                     "steam": 221640,  "players": 1, "type": "platform" },
+
+    { "id": "overcooked-2",      "title": "Overcooked! 2",                     "steam": 728880,  "players": 4, "type": "chaos" },
+    { "id": "moving-out",        "title": "Moving Out",                        "steam": 996770,  "players": 4, "type": "chaos" },
+    { "id": "lovers",            "title": "Lovers in a Dangerous Spacetime",   "steam": 252110,  "players": 4, "type": "chaos" },
+    { "id": "ship-of-fools",     "title": "Ship of Fools",                     "steam": 1286580, "players": 2, "type": "chaos" },
+
+    { "id": "heave-ho",          "title": "Heave Ho",                          "steam": 905340,  "players": 4, "type": "physics" },
+    { "id": "mount-your-friends","title": "Mount Your Friends",                "steam": 296470,  "players": 4, "type": "physics" },
+    { "id": "myf-3d",            "title": "Mount Your Friends 3D",             "steam": 441010,  "players": 4, "type": "physics" },
+    { "id": "phogs",             "title": "PHOGS!",                            "steam": 850320,  "players": 2, "type": "physics" },
+    { "id": "bread-and-fred",    "title": "Bread & Fred",                      "steam": 1607680, "players": 2, "type": "physics" },
+
+    { "id": "pico-park",         "title": "PICO PARK",                         "steam": 1509960, "players": 8, "type": "puzzle" },
+    { "id": "pico-park-2",       "title": "PICO PARK 2",                       "steam": 2644470, "players": 8, "type": "puzzle" },
+    { "id": "escape-academy",    "title": "Escape Academy",                    "steam": 1812090, "players": 2, "type": "puzzle" },
+    { "id": "split-fiction",     "title": "Split Fiction",                     "steam": 2001120, "players": 2, "type": "puzzle" },
+
+    { "id": "circuit-superstars","title": "Circuit Superstars",                "steam": 1097130, "players": 4, "type": "racing" },
+    { "id": "make-way",          "title": "Make Way",                          "steam": 1445790, "players": 4, "type": "racing" },
+    { "id": "fling",             "title": "Fling to the Finish",               "steam": 1054430, "players": 4, "type": "racing" },
+
+    { "id": "tmnt",              "title": "TMNT: Shredder's Revenge",          "steam": 1361510, "players": 4, "type": "action" },
+    { "id": "shootas",           "title": "Shootas, Blood & Teef",             "steam": 1324530, "players": 4, "type": "action" },
+    { "id": "gungeon",           "title": "Enter the Gungeon",                 "steam": 311690,  "players": 2, "type": "action" },
+    { "id": "necrodancer",       "title": "Crypt of the NecroDancer",          "steam": 247080,  "players": 2, "type": "action" },
+
+    {
+      "id": "blobby-knockout",
+      "title": "Blobby Knockout",
+      "players": 8,
+      "type": "local",
+      "blurb": "Everybody shares the two blobs: play the ball over the net, then the next player takes over. Miss and you lose a life; last blob standing wins. Press jump to join, Start to begin. X turns on drunk mode (60% speed).",
+      "launch": { "cmd": ["/home/dherrera/.local/bin/blobby"], "cwd": "/home/dherrera" },
+      "media": { "source_video": "local-media/blobby-knockout/pan.mp4", "clip_start": 0, "clip_len": 8,
+                 "cover": "local-media/blobby-knockout/cover.jpg" }
+    }
+  ]
+}
