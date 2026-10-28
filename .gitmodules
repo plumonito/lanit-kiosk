@@ -1,0 +1,4 @@
+[submodule "games/blobby-knockout"]
+	path = games/blobby-knockout
+	url = https://github.com/plumonito/blobbyvolley2.git
+	branch = feature/knockout-mode

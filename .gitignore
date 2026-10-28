@@ -7,3 +7,4 @@ state/
 launch.log
 steam_api_key.txt
 __pycache__/
+build/

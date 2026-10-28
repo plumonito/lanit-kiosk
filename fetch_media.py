@@ -6,8 +6,9 @@ Steam games: cover = capsule_616x353, clip = Steam's "microtrailer" (≈7s, sile
 to cut a longer clip out of the full trailer instead, and "movie" to pick a
 different trailer (index into the store's trailer list).
 
-Local games: "media.source_video" is cut with ffmpeg; the cover is
-"media.cover" if given, otherwise a frame grabbed from the clip.
+Local games: "media.clip" is a ready-made clip that is copied as is; otherwise
+"media.source_video" is cut with ffmpeg. The cover is "media.cover" if given,
+otherwise a frame grabbed from the clip. Relative paths are relative to this folder.
 
     ./fetch_media.py              # fetch whatever is missing
     ./fetch_media.py --force pico-park heave-ho
@@ -117,7 +118,9 @@ def fetch_local(game, out, force):
     clip, cover = out / "clip.mp4", out / "cover.jpg"
     if not force and clip.exists() and cover.exists():
         return "cached"
-    if src.is_file():
+    if m.get("clip") and local_path(m["clip"]).is_file():  # ready-made clip: just copy it
+        shutil.copy(local_path(m["clip"]), clip)
+    elif src.is_file():
         ffmpeg_clip(src, clip, m.get("clip_start", 0), m.get("clip_len", 10))
     elif m.get("source_video"):
         print(f"    ! source_video not found: {src}")

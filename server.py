@@ -6,14 +6,24 @@ a command. Binds to localhost only.
 
     ./server.py [--port 8765]      LANIT_DRY_RUN=1 ./server.py  (log instead of launching)
 """
-import argparse, json, mimetypes, os, posixpath, re, subprocess, threading, time, urllib.parse
+import argparse, json, mimetypes, os, posixpath, re, shutil, subprocess, threading, time, urllib.parse
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 
 import playtime
 
 ROOT = Path(__file__).resolve().parent
-STEAM = Path(os.environ.get("STEAM_ROOT", Path.home() / ".local/share/Steam"))
+def find_steam_root():
+    """Steam's data folder: $STEAM_ROOT, else the native, ~/.steam or Flatpak install."""
+    if os.environ.get("STEAM_ROOT"):
+        return Path(os.environ["STEAM_ROOT"]).expanduser()
+    for p in ("~/.local/share/Steam", "~/.steam/steam", "~/.var/app/com.valvesoftware.Steam/.local/share/Steam"):
+        if (Path(p).expanduser() / "steamapps").is_dir():
+            return Path(p).expanduser().resolve()
+    return Path("~/.local/share/Steam").expanduser()
+
+
+STEAM = find_steam_root()
 DRY_RUN = os.environ.get("LANIT_DRY_RUN") == "1"
 LAUNCH_COOLDOWN = 8  # seconds; stops a mashed A button from starting a game twice
 LOG = ROOT / "launch.log"
@@ -39,6 +49,11 @@ def installed_appids():
     return ids
 
 
+def local_installed(game):
+    exe = os.path.expanduser(game["launch"]["cmd"][0])
+    return bool(shutil.which(exe)) or os.access(exe, os.X_OK)
+
+
 def games_payload():
     cfg = load_config()
     installed = installed_appids()
@@ -58,7 +73,7 @@ def games_payload():
             "blurb": g.get("blurb") or meta.get("blurb", ""),
             "cover": f"/media/{g['id']}/cover.jpg" if (media / "cover.jpg").exists() else None,
             "clip": f"/media/{g['id']}/clip.mp4" if (media / "clip.mp4").exists() else None,
-            "installed": ("steam" not in g) or g["steam"] in installed,
+            "installed": g["steam"] in installed if "steam" in g else local_installed(g),
             "local": "steam" not in g,
             "quotes": quotes.get(g["id"], []),
         })
@@ -76,15 +91,22 @@ def launch(game_id):
         _last_launch = time.time()
 
     if "steam" in game:
-        cmd, cwd = ["steam", f"steam://rungameid/{game['steam']}"], None
+        # `steam` hands the URL to the running client; xdg-open covers Flatpak/Snap installs.
+        opener = "steam" if shutil.which("steam") else "xdg-open"
+        cmd, cwd = [opener, f"steam://rungameid/{game['steam']}"], None
     else:
-        cmd, cwd = game["launch"]["cmd"], game["launch"].get("cwd")
+        cmd = [os.path.expanduser(game["launch"]["cmd"][0]), *game["launch"]["cmd"][1:]]
+        cwd = os.path.expanduser(game["launch"].get("cwd", "~"))
 
     with LOG.open("a") as log:
         log.write(f"{time.strftime('%F %T')} {'DRY ' if DRY_RUN else ''}{game_id}: {cmd}\n")
         if not DRY_RUN:
-            proc = subprocess.Popen(cmd, cwd=cwd, stdin=subprocess.DEVNULL, stdout=log, stderr=log,
-                                    start_new_session=True)
+            try:
+                proc = subprocess.Popen(cmd, cwd=cwd, stdin=subprocess.DEVNULL, stdout=log, stderr=log,
+                                        start_new_session=True)
+            except OSError as e:
+                log.write(f"  failed: {e}\n")
+                return 500, {"error": f"could not start {cmd[0]}: {e.strerror}"}
             if "steam" not in game:  # Steam tracks its own games; we time the local ones
                 playtime.track_local_run(game_id, proc)
     return 200, {"ok": True, "dry_run": DRY_RUN}

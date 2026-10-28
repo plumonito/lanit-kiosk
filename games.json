@@ -55,9 +55,8 @@
       "players": 8,
       "type": "local",
       "blurb": "Everybody shares the two blobs: play the ball over the net, then the next player takes over. Miss and you lose a life; last blob standing wins. Press jump to join, Start to begin. X turns on drunk mode (60% speed).",
-      "launch": { "cmd": ["/home/dherrera/.local/bin/blobby"], "cwd": "/home/dherrera" },
-      "media": { "source_video": "local-media/blobby-knockout/pan.mp4", "clip_start": 0, "clip_len": 8,
-                 "cover": "local-media/blobby-knockout/cover.jpg" }
+      "launch": { "cmd": ["~/.local/bin/blobby"], "cwd": "~" },
+      "media": { "clip": "assets/blobby-knockout/clip.mp4", "cover": "assets/blobby-knockout/cover.jpg" }
     }
   ]
 }
