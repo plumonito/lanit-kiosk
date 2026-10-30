@@ -10,7 +10,7 @@ import argparse, json, mimetypes, os, posixpath, re, shutil, subprocess, threadi
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 
-import playtime
+import focus_guard, playtime
 
 ROOT = Path(__file__).resolve().parent
 def find_steam_root():
@@ -109,6 +109,7 @@ def launch(game_id):
                 return 500, {"error": f"could not start {cmd[0]}: {e.strerror}"}
             if "steam" not in game:  # Steam tracks its own games; we time the local ones
                 playtime.track_local_run(game_id, proc)
+            focus_guard.note_launch(None if "steam" in game else proc)
     return 200, {"ok": True, "dry_run": DRY_RUN}
 
 
@@ -182,6 +183,7 @@ def main():
     args = ap.parse_args()
     srv = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     playtime.start_poller(lambda: load_config()["games"], STEAM)
+    focus_guard.start(lambda: load_config().get("title", "LAN KIOSK"), lambda msg: print(msg, flush=True))
     print(f"kiosk server on http://127.0.0.1:{args.port}{'  (DRY RUN)' if DRY_RUN else ''}", flush=True)
     srv.serve_forever()
 

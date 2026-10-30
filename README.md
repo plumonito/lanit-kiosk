@@ -133,6 +133,21 @@ Local games (made at LANIT):
 with `~` or be relative to this folder. Changes to `games.json` show up when the
 kiosk window regains focus or on reload (F5).
 
+## Keeping the kiosk in front
+
+The Steam client brings its own window forward when a game starts or exits, and at the LAN
+nobody has a mouse to click back. On KDE Plasma (e.g. SteamOS desktop mode) the server runs a
+focus guard (`focus_guard.py`) that checks every 3 s:
+
+- **No game running:** Steam's windows are minimized and the kiosk comes back to the front.
+- **Just launched:** for up to 90 s nothing is touched, so Steam's install, shader and
+  "launching" dialogs can show.
+- **A game is running** (a Steam game, or a local game the kiosk started): the kiosk never
+  takes focus; only Steam's own windows are minimized, never the game's.
+
+It talks to KWin over D-Bus (`busctl`), so on other desktops it switches itself off.
+`LANIT_FOCUS_GUARD=0 ./start.sh` turns it off.
+
 ## Tips for the LAN
 
 - Turn off Steam's "Desktop Layout" for controllers if the d-pad feels doubled
