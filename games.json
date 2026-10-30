@@ -57,6 +57,26 @@
       "blurb": "Everybody shares the two blobs: play the ball over the net, then the next player takes over. Miss and you lose a life; last blob standing wins. Press jump to join, Start to begin. X turns on drunk mode (60% speed).",
       "launch": { "cmd": ["~/.local/bin/blobby"], "cwd": "~" },
       "media": { "clip": "assets/blobby-knockout/clip.mp4", "cover": "assets/blobby-knockout/cover.jpg" }
+    },
+
+    {
+      "id": "balloon-crew",
+      "title": "Balloon Crew",
+      "players": 8,
+      "type": "local",
+      "blurb": "Crew a hot-air balloon through a cave and land it softly at the end. Run between the burner, propellers, turret, fishing rod and repair kit, refill fuel and ammo from the hold, and fix breakdowns. Press any button to join, Start when ready.",
+      "launch": { "cmd": ["~/games/balloon-crew/BalloonCrew.x86_64"], "cwd": "~/games/balloon-crew" },
+      "media": { "clip": "local-media/balloon-crew/clip.mp4", "cover": "local-media/balloon-crew/cover.jpg" }
+    },
+
+    {
+      "id": "lanit-racing",
+      "title": "Lanit Racing",
+      "players": 16,
+      "type": "local",
+      "blurb": "Top-down party racer for up to 16. The Lanit monster chases the pack and eats the slowest; eaten players come back as ghosts with powers. Turn on your controller and press A when ready. Host: LB/RB picks the track, Back quits.",
+      "launch": { "cmd": ["~/games/lanit-racing/lanit-racing.x86_64"], "cwd": "~/games/lanit-racing" },
+      "media": { "clip": "local-media/lanit-racing/clip.mp4", "cover": "local-media/lanit-racing/cover.jpg" }
     }
   ]
 }
