@@ -77,6 +77,16 @@
       "blurb": "Top-down party racer for up to 16. The Lanit monster chases the pack and eats the slowest; eaten players come back as ghosts with powers. Turn on your controller and press A when ready. Host: LB/RB picks the track, Back quits.",
       "launch": { "cmd": ["~/games/lanit-racing/lanit-racing.x86_64"], "cwd": "~/games/lanit-racing" },
       "media": { "clip": "local-media/lanit-racing/clip.mp4", "cover": "local-media/lanit-racing/cover.jpg" }
+    },
+
+    {
+      "id": "wham",
+      "title": "Wham!",
+      "players": 4,
+      "type": "local",
+      "blurb": "Remaster of the 1997 cave flyer: fly a tiny ship through twisting caves and blast your friends with over 60 special weapons. Thrust, turn, normal and special weapon; walls are as deadly as enemy fire.",
+      "launch": { "cmd": ["~/games/wham/run.sh"], "cwd": "~/games/wham" },
+      "media": { "cover": "local-media/wham/cover.jpg" }
     }
   ]
 }
